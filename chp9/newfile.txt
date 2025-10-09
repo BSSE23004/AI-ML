@@ -1,0 +1,3 @@
+This is a old file.
+It contains multiple lines.
+This line is appended.
