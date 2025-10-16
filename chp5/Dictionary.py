@@ -47,6 +47,7 @@ student = {
     "name": "John",
     "age": 20,
     "courses": ["Math", "Science"]}
+
 print(student)#{'name': 'John', 'age': 20, 'courses':
 print(type(student))#dict
 print(student["name"])#John
@@ -69,6 +70,8 @@ print(student.keys())#dict_keys(['name', 'age', 'courses', 'address'])
 print(student.values())#dict_values(['Jane', 22, ['Math', 'Science', 'English'], '123 Main St']) 
 
 
+mergeddict = {**marks, **student}
+print(mergeddict)#{'Math': 95, 'Science': 90, 'name': 'Jane', 'age': 22, 'courses': ['Math', 'Science', 'English'], 'address': '123 Main St'}
 
-
-
+merged = marks | student
+print(merged)#{'Math': 95, 'Science': 90, 'name': 'Jane', 'age': 22, 'courses': ['Math', 'Science', 'English'], 'address': '123 Main St'}

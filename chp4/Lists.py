@@ -66,3 +66,18 @@ numbers.sort()
 print("Sorted Numbers: ",numbers)
 print("Smallest Number: ",numbers[0])
 print("Largest Number: ",numbers[-1])
+
+#enumerate
+print("Using enumerate:")
+for index, value in enumerate(numbers):
+    print(f"Index {index}: Value {value}")
+
+#list comprehension
+squared_numbers = [x**2 for x in numbers]
+print("Squared Numbers using list comprehension: ",squared_numbers)
+#filtering even numbers using list comprehension
+even_numbers = [x for x in numbers if x%2==0]
+print("Even Numbers using list comprehension: ",even_numbers)
+#map to convert numbers to strings
+string_numbers = list(map(str, numbers))
+print("String Numbers using map: ",string_numbers)
