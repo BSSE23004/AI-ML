@@ -47,3 +47,18 @@ replacingString = "Hello, <name> How are you?, We are happy to see you in our of
 name = input("Enter your name: ")
 print(f"Hello, {name}!")
 print(replacingString.replace("<name>", name).replace("<date>", datetime.datetime.now().strftime("%Y-%m-%d")))
+
+#join function example
+words = ['Hello', 'world', 'this', 'is', 'Python']
+sentence = ' '.join(words)
+print("Joined sentence using join(): ", sentence)  # Output: Hello world this is Python
+
+#format function example
+name = "Alice"
+age = 30
+formatted_string = "My name is {} and I am {} years old.".format(name, age)
+print("Formatted string using format(): ", formatted_string)  # Output: My name is Alice and I am 30 years old.
+
+#formatting with indexes
+formatted_string_indexed = "My name is {0} and I am {1} years old. {0} is learning Python.".format(name, age)
+print("Formatted string with indexes: ", formatted_string_indexed)  # Output: My name is Alice and I am 30 years old. Alice is learning Python.
